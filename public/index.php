@@ -44,6 +44,7 @@ $jsPath = $basePath . '/js/';
 
 $twig = $view->getEnvironment();
 $twig->addGlobal('app_name', 'BuyYourShirt');
+$twig->addGlobal('admin_assets', $basePath.'/admin/');
 $twig->addGlobal('css_dir', $cssPath);
 $twig->addGlobal('js_dir', $jsPath);
 $twig->addGlobal('session', $_SESSION);
